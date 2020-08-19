@@ -81,7 +81,7 @@ class Template extends CI_Controller {
 		$this->load->library('form_validation');
 		$val = $this->form_validation;
 		$val->set_rules('session','Session','trim|required|exact_length[12]');
-        $val->set_rules('nama','Nama Cabang','trim|required|max_length[100]');
+        $val->set_rules('nama','Nama','trim|required|max_length[100]');
         
 		if(!$val->run()) {
 			$return['status_code'] = '001';
@@ -101,8 +101,8 @@ class Template extends CI_Controller {
 				$return['session'] = $sess;	
 			} else {
 
-                $this->load->model('0_template');
-                $cab = $this->0_template;
+                $this->load->model('Template_model');
+                $cab = $this->Template_model;
                 $cab->set_nama($this->input->post('nama'));
                 
                 if(!$cab->insert()) {
@@ -160,8 +160,8 @@ class Template extends CI_Controller {
 
 				$p = $this->input->get('p');
 
-                $this->load->model('0_template');
-				$cab = $this->0_template;
+                $this->load->model('Template_model');
+				$cab = $this->Template_model;
 				$limit_min = $p * 50 - 50;
 
 				$cab->set_limit_min($limit_min);
@@ -218,8 +218,8 @@ class Template extends CI_Controller {
 
 				$p = $this->input->get('id');
 			
-                $this->load->model('0_template');
-				$cab = $this->0_template;
+                $this->load->model('Template_model');
+				$cab = $this->Template_model;
 
 				$cab->set_id((int)$p);
 				$detail = $cab->detail();
@@ -273,8 +273,8 @@ class Template extends CI_Controller {
 				$return['session'] = $sess;	
 			} else {
 
-                $this->load->model('0_template');
-                $cab = $this->0_template;
+                $this->load->model('Template_model');
+                $cab = $this->Template_model;
                 $cab->set_nama($this->input->post('nama'));
                 
                 if(!$cab->update()) {
@@ -329,8 +329,8 @@ class Template extends CI_Controller {
 				$return['session'] = $sess;	
 			} else {
 
-                $this->load->model('0_template');
-				$cab = $this->0_template;
+                $this->load->model('Template_model');
+				$cab = $this->Template_model;
 
 				$cab->set_id($this->input->post('id'));
 				$list = $cab->remove();
