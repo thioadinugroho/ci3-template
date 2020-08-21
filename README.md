@@ -1,2 +1,0 @@
-# CI3 - TEMPLATE
-
