@@ -94,3 +94,4 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 */
 defined('LOG_PATH')      OR define('LOG_PATH', '/');  // your log path. Make sure to end with backslash (/)
 defined('UPLOAD_PATH')      OR define('UPLOAD_PATH', '/');  // your log path. Make sure to end with backslash (/)
+defined('APPS')      OR define('APPS', 'myapp');  // your log path. Make sure to end with backslash (/)

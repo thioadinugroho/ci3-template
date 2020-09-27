@@ -64,7 +64,7 @@ class Template extends CI_Controller {
 
 		$this->benchmark->mark('code_end');
 		$elapstime = $this->benchmark->elapsed_time('code_start', 'code_end');
-		writelog(__CLASS__." | ".__FUNCTION__,'bmm',$elapstime);  
+		writelog(__CLASS__." | ".__FUNCTION__,APPS,$elapstime);  
 	}
 
 	//---------------------------------------------------------------------
@@ -121,7 +121,7 @@ class Template extends CI_Controller {
 
 		$this->benchmark->mark('code_end');
 		$elapstime = $this->benchmark->elapsed_time('code_start', 'code_end');
-		writelog(__CLASS__." | ".__FUNCTION__,'bmm',$elapstime);  
+		writelog(__CLASS__." | ".__FUNCTION__,APPS,$elapstime);  
 	}
 
 	//---------------------------------------------------------------------
@@ -130,7 +130,7 @@ class Template extends CI_Controller {
 	 * Index Page for this controller.
 	 *
 	 */
-	public function list()
+	public function listing()
 	{
 		$this->benchmark->mark('code_start');
 		$this->output->enable_profiler(false);
@@ -179,7 +179,7 @@ class Template extends CI_Controller {
 
 		$this->benchmark->mark('code_end');
 		$elapstime = $this->benchmark->elapsed_time('code_start', 'code_end');
-		writelog(__CLASS__." | ".__FUNCTION__,'bmm',$elapstime);  
+		writelog(__CLASS__." | ".__FUNCTION__,APPS,$elapstime);  
 	}
 
 	//---------------------------------------------------------------------
@@ -236,7 +236,7 @@ class Template extends CI_Controller {
 
 		$this->benchmark->mark('code_end');
 		$elapstime = $this->benchmark->elapsed_time('code_start', 'code_end');
-		writelog(__CLASS__." | ".__FUNCTION__,'bmm',$elapstime);  
+		writelog(__CLASS__." | ".__FUNCTION__,APPS,$elapstime);  
 	}
 
 	//---------------------------------------------------------------------
@@ -292,7 +292,7 @@ class Template extends CI_Controller {
 
 		$this->benchmark->mark('code_end');
 		$elapstime = $this->benchmark->elapsed_time('code_start', 'code_end');
-		writelog(__CLASS__." | ".__FUNCTION__,'bmm',$elapstime);  
+		writelog(__CLASS__." | ".__FUNCTION__,APPS,$elapstime);  
 	}
 
 	//---------------------------------------------------------------------
@@ -346,7 +346,7 @@ class Template extends CI_Controller {
 
 		$this->benchmark->mark('code_end');
 		$elapstime = $this->benchmark->elapsed_time('code_start', 'code_end');
-		writelog(__CLASS__." | ".__FUNCTION__,'bmm',$elapstime);  
+		writelog(__CLASS__." | ".__FUNCTION__,APPS,$elapstime);  
 	}
 
 	//---------------------------------------------------------------------
